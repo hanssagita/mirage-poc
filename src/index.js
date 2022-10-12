@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {initializeServer} from './api-mock';
+
+if (process.env.NODE_ENV === "development") {
+  initializeServer()
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
