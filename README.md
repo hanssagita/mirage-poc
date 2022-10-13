@@ -4,33 +4,11 @@
 
 [Mirage JS](https://miragejs.com/)
 
-## MirageJs config
-
-
-```js
-import { createServer } from 'miragejs'
-
-createServer({
-    routes() {
-      this.namespace = '/api' // API namespace
-      this.timing = API_DELAY_TIMING // API timing in Number type
-
-      this.get("/api/users", () => [  // simple new API endpoint mock
-        { id: "1", name: "Luke" },
-        { id: "2", name: "Leia" },
-        { id: "3", name: "Anakin" },
-      ])
-
-      this.passthrough() // Passthrough real API call
-    }
-  })
-```
+[My learning summary in notion](https://hanssagita.notion.site/MirageJs-4268ccd1d1414ec19ab90f8e78115ac2)
 
 
 
-
-## API mock Structure
-
+## New API mock endpoint Guideline
 
 ```js
 {
