@@ -21,3 +21,16 @@
       response: {} // in JSON object
 }
 ```
+
+## API mock foldering guidance
+
+```js
+  📂 src
+    📂 api-mock
+      📂 modules
+        └ auth.js  // API mock for auth microservice
+        └ order.js // API mock for order microservice
+        └ payment.js  // API mock for payment microservice
+      index.js // core logic mock creation
+
+```
